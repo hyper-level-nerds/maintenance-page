@@ -2,6 +2,6 @@ version: '2'
 
 services:
   nginx:
-    image: docker.io/bitnami/nginx:1.23
+    image: ghcr.io/sid0831/nginx-container:latest
     ports:
       - '80:8080'
