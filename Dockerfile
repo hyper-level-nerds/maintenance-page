@@ -2,12 +2,12 @@ FROM docker.io/library/ubuntu:jammy
 
 ARG TARGETARCH
 
-LABEL org.opencontainers.image.authors="https://bitnami.com/contact" \
-      org.opencontainers.image.description="Application packaged by Bitnami" \
+LABEL org.opencontainers.image.authors="https://bitnami.com/contact; https://sidlibrary.org" \
+      org.opencontainers.image.description="Application packaged by Bitnami; flavoured by Sidney Jeong" \
       org.opencontainers.image.ref.name="1.23.2-jammy-r0" \
       org.opencontainers.image.source="https://github.com/bitnami/containers/tree/main/bitnami/nginx" \
       org.opencontainers.image.title="nginx" \
-      org.opencontainers.image.vendor="VMware, Inc." \
+      org.opencontainers.image.vendor="VMware, Inc.; Sidney Jeong" \
       org.opencontainers.image.version="1.23.2"
 
 ENV HOME="/" \
