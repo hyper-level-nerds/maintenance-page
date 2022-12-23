@@ -4,7 +4,7 @@ ARG TARGETARCH
 
 LABEL org.opencontainers.image.authors="https://bitnami.com/contact; https://sidlibrary.org" \
       org.opencontainers.image.description="Application packaged by Bitnami; flavoured by Sidney Jeong" \
-      org.opencontainers.image.ref.name="1.23.3-jammy-r0" \
+      org.opencontainers.image.ref.name="1.23.3-jammy-r1" \
       org.opencontainers.image.source="https://github.com/bitnami/containers/tree/main/bitnami/nginx" \
       org.opencontainers.image.title="nginx" \
       org.opencontainers.image.vendor="VMware, Inc.; Sidney Jeong" \
