@@ -4,11 +4,11 @@ ARG TARGETARCH
 
 LABEL org.opencontainers.image.authors="https://bitnami.com/contact; https://sidlibrary.org" \
       org.opencontainers.image.description="Application packaged by Bitnami; flavoured by Sidney Jeong" \
-      org.opencontainers.image.ref.name="1.23.2-jammy-r0" \
+      org.opencontainers.image.ref.name="1.23.3-jammy-r0" \
       org.opencontainers.image.source="https://github.com/bitnami/containers/tree/main/bitnami/nginx" \
       org.opencontainers.image.title="nginx" \
       org.opencontainers.image.vendor="VMware, Inc.; Sidney Jeong" \
-      org.opencontainers.image.version="1.23.2"
+      org.opencontainers.image.version="1.23.3"
 
 ENV HOME="/" \
     OS_ARCH="${TARGETARCH:-amd64}" \
@@ -28,7 +28,6 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get clean && rm -rf /var/lib/apt/lists /var/cache/apt/archives
 RUN mkdir -p /opt/bitnami/nginx/logs /opt/bitnami/nginx/html /opt/bitnami/nginx/tmp /opt/bitnami/nginx/sbin /opt/bitnami/nginx/server_blocks && \
     cp -av /etc/nginx /opt/bitnami/nginx/conf && chmod -R g+rwX /opt/bitnami
-RUN git clone --single-branch --branch maintenance-page https://github.com/sid0831/sid0831.github.io /opt/bitnami/nginx/html
 RUN ln -sf /dev/stdout /opt/bitnami/nginx/logs/access.log && \
     ln -sf /dev/stderr /opt/bitnami/nginx/logs/error.log
 
@@ -38,7 +37,7 @@ RUN cp -av /usr/sbin/nginx /opt/bitnami/nginx/sbin/nginx && \
 RUN /opt/bitnami/scripts/nginx/postunpack.sh
 RUN ln -sfr /lib/x86_64-linux-gnu/libssl.so.3 /lib/x86_64-linux-gnu/libssl.so.1.1 && \
     ln -sfr /lib/x86_64-linux-gnu/libcrypto.so.3 /lib/x86_64-linux-gnu/libcrypto.so.1.1
-ENV APP_VERSION="1.23.2" \
+ENV APP_VERSION="1.23.3" \
     BITNAMI_APP_NAME="nginx" \
     NGINX_HTTPS_PORT_NUMBER="" \
     NGINX_HTTP_PORT_NUMBER="" \

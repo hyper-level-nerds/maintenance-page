@@ -2,6 +2,6 @@ version: '2'
 
 services:
   nginx:
-    image: ghcr.io/sid0831/nginx-container:latest
+    image: ghcr.io/hyper-level-nerds/maintenance-page:latest
     ports:
       - '80:8080'

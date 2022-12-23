@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;800&family=Raleway:wght@700;900&family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@latest/neodgm/style.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
+html,
+body {
+    padding: 2em;
+    margin: auto;
+    max-width: 64em;
+    min-width: 67vw;
+    background: #101820 !important;
+}
+
+body {
+    font: 1.3em 'Libre Baskerville', 'Vollkorn', Palatino, Times;
+    color: #333;
+    line-height: 1.4;
+    text-align: justify;
+    word-break: normal;
+}
+
+header,
+nav,
+article,
+footer {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    min-height: 30vh;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-bottom: 50px;
+}
+
+video {
+    margin: 2em 0;
+    border: 1px solid #ddd;
+}
+
+nav {
+    font-size: .9em;
+    font-style: italic;
+    border-bottom: 1px solid #ddd;
+    padding: 1em 0;
+}
+
+nav p {
+    margin: 0;
+}
+
+div.container {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Typography
+-------------------------------------------------------- */
+
+h1 {
+    font-family: 'Manrope', 'Raleway', Palatino, Times;
+    color: #f2c763;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Manrope', 'Raleway', Palatino, Times;
+    color: #f2c763;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Manrope', 'Raleway', Palatino, Times;
+    color: #f2c763;
+    font-size: 0.8em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+p {
+    color: white;
+    margin-top: 0;
+    -webkit-hypens: auto;
+    -moz-hypens: auto;
+    hyphens: auto;
+}
+
+p.dgm {
+    font-family: 'NeoDunggeunmo';
+    word-break: keep-all;
+}
+
+p.pretendard {
+    font-family: 'Pretendard';
+    word-break: keep-all;
+}
+
+p.disclaimer {
+    color: #dcdcdc;
+    text-align: right;
+    font-size: 0.6em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+ul {
+    color: white;
+    list-style: square;
+    padding-left: 1.2em;
+}
+
+ol {
+    color: white;
+    padding-left: 1.2em;
+}
+
+blockquote {
+    color: white;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 1px solid #ddd;
+}
+
+code {
+    color: white;
+    font-family: 'JetBrains Mono', "Consolas", "Menlo", "Monaco", monospace, serif;
+    font-size: .9em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f2c763;
+    text-decoration: underline;
+}
+
+a img {
+    border: none;
+}
+
+h2 a {
+    color: #f2c763;
+}
+
+h2 a:hover {
+    color: #8a2b2b;
+    text-decoration: underline;
+}
+
+h3 a {
+    color: #f2c763;
+}
+
+h3 a:hover {
+    color: #8a2b2b;
+    text-decoration: underline;
+}
+
+hr {
+    color: #ddd;
+    width: auto;
+    height: 1px;
+    margin: 2em 0;
+    padding: 0;
+    border-top: solid 1px #ddd;
+    border-bottom: none;
+    border-left: 0;
+    border-right: 0;
+}
+
+p#heart {
+    font-size: 2em;
+    line-height: 1;
+    text-align: center;
+    color: #ccc;
+}
+
+.red {
+    color: #8a2b2b;
+}
+
+
+/* Home Page
+--------------------------- */
+
+body#index li {
+    margin-bottom: 1em;
+}
+
+
+/* iPad
+-------------------------------------------------------- */
+
+@media only screen and (max-device-width: 1024px) {
+    body {
+        font-size: 120%;
+        line-height: 1.4;
+    }
+}
+
+
+/* @iPad */
+
+
+/* iPhone
+-------------------------------------------------------- */
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        text-align: left;
+    }
+    article,
+    footer {
+        width: auto;
+    }
+    article {
+        padding: 0 10px;
+    }
+}
+
+
+/* @iPhone */
